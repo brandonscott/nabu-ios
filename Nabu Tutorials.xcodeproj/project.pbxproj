@@ -14,6 +14,8 @@
 		CAD5C55B1A4A10CA00B39B8E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD5C55A1A4A10CA00B39B8E /* Images.xcassets */; };
 		CAD5C55E1A4A10CA00B39B8E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD5C55C1A4A10CA00B39B8E /* LaunchScreen.xib */; };
 		CAD5C56A1A4A10CA00B39B8E /* Nabu_TutorialsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD5C5691A4A10CA00B39B8E /* Nabu_TutorialsTests.m */; };
+		CAD5C5741A4A23E700B39B8E /* NabuOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD5C5731A4A23E700B39B8E /* NabuOpenSDK.framework */; };
+		CAD5C5761A4A242A00B39B8E /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD5C5751A4A242A00B39B8E /* libxml2.2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		CAD5C5631A4A10CA00B39B8E /* Nabu TutorialsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nabu TutorialsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD5C5681A4A10CA00B39B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAD5C5691A4A10CA00B39B8E /* Nabu_TutorialsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nabu_TutorialsTests.m; sourceTree = "<group>"; };
+		CAD5C5731A4A23E700B39B8E /* NabuOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NabuOpenSDK.framework; path = ../SDKs/NabuOpenSDK.framework; sourceTree = "<group>"; };
+		CAD5C5751A4A242A00B39B8E /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD5C5761A4A242A00B39B8E /* libxml2.2.dylib in Frameworks */,
+				CAD5C5741A4A23E700B39B8E /* NabuOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,8 @@
 		CAD5C5411A4A10CA00B39B8E = {
 			isa = PBXGroup;
 			children = (
+				CAD5C5751A4A242A00B39B8E /* libxml2.2.dylib */,
+				CAD5C5731A4A23E700B39B8E /* NabuOpenSDK.framework */,
 				CAD5C54C1A4A10CA00B39B8E /* Nabu Tutorials */,
 				CAD5C5661A4A10CA00B39B8E /* Nabu TutorialsTests */,
 				CAD5C54B1A4A10CA00B39B8E /* Products */,
@@ -168,6 +176,7 @@
 				TargetAttributes = {
 					CAD5C5491A4A10CA00B39B8E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = NUDP78Z29B;
 					};
 					CAD5C5621A4A10CA00B39B8E = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -343,6 +352,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Brandon/Documents/Razer/Nabu/SDKs,
+				);
 				INFOPLIST_FILE = "Nabu Tutorials/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +366,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Brandon/Documents/Razer/Nabu/SDKs,
+				);
 				INFOPLIST_FILE = "Nabu Tutorials/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
