@@ -7,8 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <NabuOpenSDK/NabuOpenSDK.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate> {
+    IBOutlet UITextField *titleTextField;
+    IBOutlet UITextField *lineOneTextField;
+    IBOutlet UITextField *lineTwoTextField;
+    IBOutlet UIScrollView *scrollArea;
+}
+
+- (IBAction)pressedAuthenticate:(id)sender;
+- (IBAction)pressedCheckAuth:(id)sender;
+- (IBAction)pressedSendNotification:(id)sender;
+- (IBAction)pressedGetProfile:(id)sender;
+- (IBAction)pressedFitnessRecords:(id)sender;
+- (IBAction)pressedFitnessDate:(id)sender;
+- (IBAction)pressedFitnessDays:(id)sender;
 
 
 @end

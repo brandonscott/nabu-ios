@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <NabuOpenSDK/NabuOpenSDK.h>
 
 @interface AppDelegate ()
 
@@ -14,6 +15,14 @@
 
 @implementation AppDelegate
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    [[NabuDataManager sharedDataManager] validateURLResponse:url withBlock:^(NSDictionary *callback) {
+        //Check the Operation Status
+        NSLog([callback description]);
+    }];
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
