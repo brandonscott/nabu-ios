@@ -23,7 +23,17 @@
 - (IBAction)pressedFitnessRecords:(id)sender;
 - (IBAction)pressedFitnessDate:(id)sender;
 - (IBAction)pressedFitnessDays:(id)sender;
+- (IBAction)pressedSleepTracker:(id)sender;
+- (IBAction)pressedSleepHistory:(id)sender;
 
+- (IBAction)pressedCreateUpdateClipboard:(id)sender;
+- (IBAction)pressedDeleteClipboard:(id)sender;
+- (IBAction)pressedGetClipboard:(id)sender;
+- (IBAction)pressedClipboards:(id)sender;
+
+
+- (IBAction)pressedPulseInfo:(id)sender;
+- (IBAction)pressedHighFiveInfo:(id)sender;
 
 @end
 
